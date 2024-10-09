@@ -1,17 +1,16 @@
 package com.example.androidmvpsample.presenter.contract
 
-interface ILogin {
+import com.example.androidmvpsample.model.Post
+
+interface INewPost {
 
     interface View {
         fun onSuccess(message: String)
+        fun onError(message: String)
         fun onFail(message: String)
     }
 
     interface Presenter {
-        fun login(userName: String, password: String)
+        suspend fun createNewPost(newPost : Post)
     }
 }
-
-
-
-// contract is connection between view and presenter

@@ -1,3 +1,3 @@
 package com.example.androidmvpsample.model
 
-data class Login(var userName: String = "username", var password: String = "1234")
+data class Login(var userName: String = "Amrol", var password: String = "1234")
